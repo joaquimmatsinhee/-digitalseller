@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <title>DIGITAL SELLER</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="DIGITAL SELLER" />
+    <meta name="description" content="DIGITAL SELLER — Exclusive Creator Collections and Digital Vault" />
+
+    <!-- Open Graph / WhatsApp / Telegram / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DIGITAL SELLER" />
+    <meta property="og:url" content="https://digitalseller-psi.vercel.app/" />
+    <meta property="og:title" content="DIGITAL SELLER" />
+    <meta property="og:description" content="DIGITAL SELLER — Exclusive Creator Collections and Digital Vault" />
+    <meta property="og:image" content="https://digitalseller-psi.vercel.app/preview.png?v=3" />
+    <meta property="og:image:secure_url" content="https://digitalseller-psi.vercel.app/preview.png?v=3" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1672" />
+    <meta property="og:image:height" content="941" />
+    <meta property="og:image:alt" content="DIGITAL SELLER" />
+    <link rel="image_src" href="https://digitalseller-psi.vercel.app/preview.png?v=3" />
+
+    <!-- Twitter / X.com -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://digitalseller-psi.vercel.app/" />
+    <meta name="twitter:title" content="DIGITAL SELLER" />
+    <meta name="twitter:description" content="DIGITAL SELLER — Exclusive Creator Collections and Digital Vault" />
+    <meta name="twitter:image" content="https://digitalseller-psi.vercel.app/preview.png?v=3" />
+    <meta name="twitter:image:alt" content="DIGITAL SELLER" />
+
+    <script>
+      (function () {
+        try {
+          if (typeof window !== 'undefined' && window.location) {
+            var fullImgUrl = window.location.origin + '/preview.png';
+            var ogImg = document.querySelector('meta[property="og:image"]');
+            if (ogImg) ogImg.setAttribute('content', fullImgUrl);
+            var ogSecImg = document.querySelector('meta[property="og:image:secure_url"]');
+            if (ogSecImg) ogSecImg.setAttribute('content', fullImgUrl);
+            var twImg = document.querySelector('meta[name="twitter:image"]');
+            if (twImg) twImg.setAttribute('content', fullImgUrl);
+            var ogUrl = document.querySelector('meta[property="og:url"]');
+            if (ogUrl) ogUrl.setAttribute('content', window.location.href);
+            var twUrl = document.querySelector('meta[name="twitter:url"]');
+            if (twUrl) twUrl.setAttribute('content', window.location.href);
+          }
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400..800&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
